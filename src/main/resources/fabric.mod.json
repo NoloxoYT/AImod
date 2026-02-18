@@ -1,38 +1,20 @@
 {
-	"schemaVersion": 1,
-	"id": "aimod",
-	"version": "${version}",
-	"name": "AImod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/aimod/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.ia.AImod"
-		],
-		"client": [
-			"com.ia.AImodClient"
-		]
-	},
-	"mixins": [
-		"aimod.mixins.json",
-		{
-			"config": "aimod.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.18.4",
-		"minecraft": "~1.21.11",
-		"java": ">=21",
-		"fabric-api": "*"
-	}
+  "id": "aimod",
+  "version": "${version}",
+  "name": "AI Mod",
+  "description": "Un mod Fabric pour Minecraft 1.21.11 qui permet d'avoir une IA dans son chat.",
+  "authors": ["Gabriel Cochet"],
+  "contact": {
+    "homepage": "https://github.com/NoloxoYT/AImod",
+    "sources": "https://github.com/NoloxoYT/AImod"
+  },
+  "license": "MIT",
+  "icon": "assets/aimod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.aimod.AImod"]
+  },
+  "mixins": [
+    "aimod.mixins.json"
+  ]
 }
