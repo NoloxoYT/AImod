@@ -1,21 +1,22 @@
 plugins {
-    id 'fabric-loom' version '1.+'
+    id 'fabric-loom' version '1.4-SNAPSHOT'
     id 'maven-publish'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabricmc.net/' }
 }
 
 version = '1.0.0'
 group = 'com.example'
 archivesBaseName = 'aimod'
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    minecraft "com.mojang:minecraft:1.21.11"
+    minecraft "com.mojang:minecraft:1.21.1"
     mappings loom.officialMojangMappings()
-    modImplementation "net.fabricmc:fabric-loader:0.14.22"
-    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    modImplementation "net.fabricmc:fabric-loader:0.15.3"
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
 }
 
 processResources {
